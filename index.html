@@ -16,22 +16,34 @@
 
     <h1>What are people saying?</h1>
 
-    <div id="search">
-        
-        Input the name of the company you would like to search for: 
-        <input type="text" id="searchbox" name="searchbox" value="Search"><br><br>
-        <input type="submit" value="Search">
+    <!---- Search Box--->
 
+
+    <div id="floating-panel">
+        <input id="autocomplete" class="controls" type="text" placeholder="Search Box" />
+        <input id="submit" type="button" value="Search" onclick="request">
     </div>
 
-    
+
+
+
+    <!---- Map --->
+
+
     <div id="map"></div>
 
 
 
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCofTL5aR1bjnvpnPhbSBu-RCNScqg2g5A&callback=initMap" async defer></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCofTL5aR1bjnvpnPhbSBu-RCNScqg2g5A&libraries=places"></script>
+    <!---- Results ---->
+
+    <div id="results">
+        To see the latest discussions, click <a href="">here!</a>
+    </div>
+
+    <!--- Google Maps API Scripts --->
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCofTL5aR1bjnvpnPhbSBu-RCNScqg2g5A&signed_in=true&libraries=places&callback=initialize" async defer></script>
 </body>
 
 </html>
